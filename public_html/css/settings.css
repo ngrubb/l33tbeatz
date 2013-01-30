@@ -1,0 +1,134 @@
+/* Form */
+form {
+    padding: 15px;
+}
+
+#window {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    overflow: auto;
+
+}
+
+#window h2 {
+    font-weight:bold;
+    color: #00A3EE;
+    margin: 5px 15px 2px;
+}
+
+#window h3 {
+    color: #D80351;
+    width: 300px;
+}
+
+#window p{
+    font-size:14px;
+    color: white;
+    margin-bottom:0px;
+    margin-top:0px;
+    padding-bottom:10px;
+    padding-left: 20px;
+}
+
+#window label{
+    display:block;
+    font-weight:bold;
+    text-align:right;
+    width: 140px;
+    float:left;
+    color: rgb(245,217,8);
+}
+
+#window .formSection {
+    float:left;
+    width: 400px;
+    margin: 15px;
+}
+
+.formSection img {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 15px;
+
+    /* Drop Shadow */
+    -moz-box-shadow:    0px 0px 5px 5px #383838;
+    -webkit-box-shadow: 0px 0px 5px 5px #383838;
+    box-shadow:         0px 0px 5px 5px #383838;
+}
+
+#window .formItem{
+    float:left;
+}
+
+#clear {
+    clear: left;
+}
+
+#window .small{
+    color: white;
+    display:block;
+    font-size:11px;
+    font-weight:normal;
+    text-align:right;
+    width:140px;
+}
+
+#window input[type=submit] {
+    width: auto;
+    margin-left: 150px;
+    border: 1px solid #0273dd;
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #38a6f0;
+    cursor:pointer;
+    color: white;
+    padding: 5px;
+}
+
+#window input {
+    float:left;
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:200px;
+    margin:5px 0 20px 10px;
+    background: #DEDEDE;
+}
+
+#maleIcon {
+    float: left;
+    color: white;
+    margin: 0 10px 0 27px;
+    font-size: 1.8em;
+}
+
+#femaleIcon {
+    float: left;
+    color: white;
+    margin: 0 10px 0 27px;
+    font-size: 1.8em;
+}
+
+#window input[type=radio] {
+    margin:  10px 14px;
+    width: auto;
+}
+
+#window input[type=text]:focus, 
+#window input[type=password]:focus {
+    box-shadow: inset 0 0 3px #000;
+    background: #F2F2F2;
+    border-color: #00A3EE;
+    border-width: .16em;
+}
+
+.deleteAccount {
+    clear: both;
+    margin: 15px;
+}
+
+#window .deleteAccount input[type=submit] {
+    background: #D80351;
+}

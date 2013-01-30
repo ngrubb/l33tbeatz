@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <title>L33t BEATz | Login</title>
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="js/login.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu|Lato' rel='stylesheet' type='text/css'>
+	</head>
+
+    <body>
+        <div class="formContainer">
+			<section class="main">
+
+				<img src="img/neon.png" alt="L33T BEATz" id="logo"/>
+
+				<form id="loginForm" method="post" action="private_html/login.php">
+					
+					<div id="signinHeader">
+						<h2>Sign in</h2>
+
+						<div class="flip">
+			    			<a class="icon flipicon lsf">edit</a>
+			        		<a href="#" class="flipLink">REGISTER?</a>
+						</div>
+					</div>
+
+					<div class="formStuff">
+			        	<label for="email" >Email</label>
+			        	<a class="icon lsf">mail</a>
+			        	<input type="text" name="email" id="login" placeholder="Email">
+
+
+			        	<label for="password">Password</label>
+			        	<a class="icon allign lsf">key</a>
+			        	<input type="password" name="password" id="password" placeholder="Password"> 
+					</div>
+
+					<div id="signIn">
+			        	<input type="submit" name="submit" value="Sign in">
+					</div>
+				</form>​
+
+				<form class="form" id="signUpForm" method="post" action="private_html/registerEmail.php">
+
+					<div id="signupHeader">
+						<h2>Sign up</h2>
+
+						<div class="flip">
+			    			<a id="loginIcon" class="icon flipicon lsf">login</a>
+			        		<a href="#" class="flipLink">Login?</a> 	
+				    	</div>
+					</div>
+
+					<div class="formStuff">
+				           	<label for="email">Email</label>
+				        	<a class="icon lsf">mail</a>
+				        	<input type="text" name="email" id="email" placeholder="We'll give you a password"> 
+				    	
+				        	<label for="firstName">First Name</label>
+				        	<a class="icon allign lsf">you</a>
+				        	<input type="text" name="firstName" id="firstName" placeholder="First name"> 
+				    	
+				    	
+				        	<label for="lastName">Last Name</label>
+				        	<a class="icon lsf">users</a>
+				        	<input type="text" name="lastName" id="lastName" placeholder="Last name"> 
+				    	
+				    		<label for="gender">Gender</label>
+				        	<a class="icon gender lsf">male</a>
+				        	<input type="radio" name="gender" id="gender" value="m"> 
+				        	<a class="icon gender lsf">female</a>
+				        	<input type="radio" name="gender" id="gender" value="f"> 
+				    </div>
+
+				    <div id="signUp">	
+				        <input type="submit" name="submit" value="Sign Up">
+					</div>
+				</form>​
+			</section>
+		</div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+#playlistHeader h4{
+    font-size: 2em;
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-weight: 300;
+    border-bottom: 2px solid #00A3EE;
+    margin: 15px;
+}
+
+.playlist {
+    margin: 48px;
+    float: left;
+}
+
+.playlist h5:hover {
+    color: #00A3EE;
+}
+
+.playlistIcon img{
+    -webkit-box-shadow: 5px 5px 10px #222;
+    box-shadow:         5px 5px 10px #222;
+}
+
+.playlistInfo {
+    float: right;
+    color: white;
+    margin: 2px;
+}
+
+.playlistInfo h5 {
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Droid Sans', sans-serif;
+}
+

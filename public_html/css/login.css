@@ -1,0 +1,336 @@
+/*--------------------------Display-------------------------------*/
+/*-- Used as template: http://tympanus.net/codrops/2012/10/16/custom-login-form-styling/ --*/
+body {
+    background-image: url(../img/irongrip.png);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-weight: 400;
+    width: 450px;
+    height: 280px;
+    margin: 30px;
+    padding: 10px;
+    background: #111; 
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+    box-shadow: 
+        inset 0 0 2px 1px rgba(255,255,255,0.08), 
+        0 16px 10px -8px rgba(0, 0, 0, 0.6);
+}
+
+form h2 {
+    margin: 5px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    font-weight: 700;
+    cursor: pointer;
+    float: left;
+}
+
+#signinHeader {
+    margin: 10px 5px 40px;
+    border-bottom: white 1px solid;
+    overflow: auto;
+}
+
+#signupHeader {
+    margin: 5px 5px 15px;
+    border-bottom: white 1px solid;
+    overflow: auto;
+}
+
+form label {
+    width: 35%;
+    float: left;
+    padding-top: 9px;
+    color: #ddd;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    text-indent: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form input[type=text],
+form input[type=password] {
+    width: 50%;
+    float: left;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    background: #1f2124; /* Fallback */
+    background: -moz-linear-gradient(#1f2124, #27292c);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#1f2124), to(#27292c));
+    background: -webkit-linear-gradient(#1f2124, #27292c);
+    background: linear-gradient(#1f2124, #27292c);    
+    border: 1px solid #000;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+    border-radius: 3px;
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: #fff;
+}
+
+form input[type=text]:hover,
+form input[type=password]:hover,
+form label:hover ~ input[type=text],
+form label:hover ~ input[type=password] {
+    background: #27292c;
+}
+
+form input[type=text]:focus, 
+form input[type=password]:focus {
+    box-shadow: inset 0 0 2px #000;
+    background: #494d54;
+    border-color: #51cbee;
+    outline: none; /* Remove Chrome outline */
+}
+
+form a {
+    width: auto;
+    float: none;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+form .icon {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.8em;
+    float: left;
+}
+
+form .allign {
+    margin: 0 21px;
+}
+
+form .flipicon {
+    margin: 5px 5px 0;
+}
+
+form .gender {
+    margin: 0 10px 0 28px;
+}
+
+.form input[type=radio] {
+    margin:  10px 16px;
+    float: left;
+}
+
+form a:hover {
+    text-decoration: none;
+}
+
+.flip {
+    float: right;
+}
+
+.flipLink {
+    margin: 18px 3px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 0 #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.flipLink:hover {
+    text-decoration: underline;
+}
+
+.formStuff {
+    overflow: auto;
+}
+
+#signIn {
+    margin: 40px 20px 10px;
+}
+
+#signUp {
+    margin: 5px 20px;
+}
+
+form input[type=submit] {
+    width: 100%;
+    padding: 8px 5px;
+    border: 1px solid #0273dd; /* Fallback */
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #38a6f0;
+    cursor:pointer;
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+}
+
+form input[type=submit]:hover { 
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+form input[type=submit]:active { 
+    background: #287db5;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.6);
+    border-color: #000; /* Fallback */
+    border-color: rgba(0,0,0,0.9);
+}
+
+
+#facebookIcon{
+    width: 225px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-top: 222px;
+    margin-left: -112px;
+    box-shadow: 
+        inset 0 0 2px 1px rgba(255,255,255,0.08), 
+        0 16px 10px -8px rgba(0, 0, 0, 0.6);
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+/*----------------------Animation----------------------------*/
+/*-- Used http://tutorialzine.com/2012/02/apple-like-login-form as reference--*/
+
+.formContainer{
+    position:relative;
+    -moz-perspective: 800px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.formContainer form{
+    position:absolute;
+    top: 45%;
+    left: 50%;
+    margin-left: -225px;
+
+    /* Enabling 3d space for the transforms */
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    /* When the forms are flipped, they will be hidden */
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    /* Enabling a smooth animated transition */
+    -moz-transition:0.8s;
+    -webkit-transition:0.8s;
+    transition:0.8s;
+
+    /* Configure a keyframe animation for Firefox */
+    -moz-animation: pulse 2s infinite;
+
+    /* Configure it for Chrome and Safari */
+    -webkit-animation: pulse 2s infinite;
+}
+
+#loginForm{
+    z-index:100;
+}
+
+#signUpForm{
+    z-index:1;
+    opacity:0;
+
+    /* Rotating the form by default */
+    -moz-transform:rotateY(180deg);
+    -webkit-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+
+.formContainer.flipped #loginForm{
+
+    opacity:0;
+
+    /**
+     * Rotating the login form when the
+     * flipped class is added to the container
+     */
+
+    -moz-transform:rotateY(-180deg);
+    -webkit-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+}
+
+.formContainer.flipped #signUpForm{
+
+    opacity:1;
+
+    /* Rotating the recover div into view */
+    -moz-transform:rotateY(0deg);
+    -webkit-transform:rotateY(0deg);
+    transform:rotateY(0deg);
+}
+
+/* Ligature Symbols font for the form icons */
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('../font/LigatureSymbols/LigatureSymbols-2.09.eot');
+    src: url('../font/LigatureSymbols/LigatureSymbols-2.09.eot?#iefix') format('embedded-opentype'),
+         url('../font/LigatureSymbols/LigatureSymbols-2.09.woff') format('woff'),
+         url('../font/LigatureSymbols/LigatureSymbols-2.09.ttf') format('truetype'),
+         url('../font/LigatureSymbols/LigatureSymbols-2.09.svg#LigatureSymbols') format('svg');
+    src: url('../font/LigatureSymbols/LigatureSymbols-2.09.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lsf {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.lsf-icon:before {
+  content:attr(title);
+  margin-right:0.3em;
+  font-size:130%;
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}

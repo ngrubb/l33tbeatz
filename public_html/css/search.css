@@ -1,0 +1,67 @@
+#searchHeader {
+    margin: 15px;
+    border-bottom: 2px solid #FFF;
+    overflow: auto;
+}
+
+#searchHeader h4{
+    font-size: 2em;
+    color: white;
+    font-weight: 300;
+    float: left;
+    margin: 5px;
+}
+
+#searchText {
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#searchResults {
+}
+
+.result {
+    margin: 25px 50px;
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.4em;
+    clear: both;
+    overflow: auto;
+}
+
+.result:hover {
+    color: #00A3EE;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.searchLabel {
+    float: left;
+    margin: 0;
+    width: 80px;
+}
+
+.artistLabel {
+    color: #F5D908;
+}
+
+.albumLabel {
+    color: #00A3EE;
+}
+
+.songLabel {
+    color: #D80351;
+}
+
+.foundElement {
+    float: left;
+    margin: 0 10px;
+}
+
+.artistInfo {
+    clear: both;
+    font-size: .8em;
+    margin: 3px 0 3px 120px;
+
+}

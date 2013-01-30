@@ -1,0 +1,383 @@
+#lightbox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 450px;
+	margin-left: -250px;
+	background: #fff;
+	z-index: 1001;
+	display: none;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+#lightbox-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.75;
+	z-index: 1000;
+	display: none;
+}
+
+/*recreation of the popup forms on Rdio.com, varied for our needs*/
+.lightboxHeader {
+	padding: 10px;
+	border-bottom: 1px solid #e1e6e9;
+}
+
+.lightboxHeader h2 {
+	color: #4b5c66;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	line-height: 26px;
+	font-size: 22px;
+	margin: 10px;
+}
+
+.lightboxBody {
+	padding: 15px 10px 15px 15px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+input[type="text"] {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid #b8c3c9;
+	padding: 6px 8px;
+	resize: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+
+.formRow {
+	margin: 20px 0;
+	overflow: auto;
+}
+
+.label {
+	float: left;
+	width: 120px;
+	color: #4b5c66;
+	margin: 5px;
+	font-size: 16px;
+}
+
+.field {
+	margin-left: 130px;
+}
+
+.lightboxBody button {
+	clear: both;
+	margin: 15px 85px;
+	font-size: 20px;
+	width: 250px;
+	height: 60px;
+}
+
+
+.lightboxFooter {
+	border-top: 1px solid #b8c3c9;
+	background: #e1e6e9;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	padding: 10px;
+	overflow: auto;
+}
+
+.lightboxButtons {
+	float: right;
+	font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+
+.lightboxFooter button {
+	float: right;
+	font-size: 14px;
+}
+
+
+.button {
+    border: 1px solid #b8c3c9;
+    line-height: 26px;
+    display: inline-block;
+    padding: 0 10px;
+    color: #4b5c66;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #f5f7fa));
+    background-image: -webkit-linear-gradient(#ffffff 60%, #f5f7fa 100%);
+    background-image: -moz-linear-gradient(center top, #ffffff 60%, #f5f7fa 100%);
+    background-image: -moz-gradient(center top, #ffffff 60%, #f5f7fa 100%);
+    -webkit-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.07);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-font-smoothing: auto;
+}
+
+.button:hover, .button:focus {
+    text-decoration: none;
+    color: #000;
+    background-color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff), color-stop(100%, #ebeff2));
+    background-image: -webkit-linear-gradient(#ffffff 60%, #ebeff2 100%);
+    background-image: -moz-linear-gradient(center top, #ffffff 60%, #ebeff2 100%);
+    background-image: -moz-gradient(center top, #ffffff 60%, #ebeff2 100%);
+}
+
+.addNew {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 2em;
+}
+
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5em;
+}
+
+.button.blue:hover, .button.blue:focus {
+	background-color: #1ea1e3;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #1ea1e3), color-stop(100%, #0086c9));
+	background-image: -webkit-linear-gradient(#1ea1e3 60%, #0086c9 100%);
+	background-image: -moz-linear-gradient(center top, #1ea1e3 60%, #0086c9 100%);
+	background-image: -moz-gradient(center top, #1ea1e3 60%, #0086c9 100%);
+	background-color: #008fd5;
+	border: 1px solid #0070a8;
+}
+
+.button.blue {
+	border: 1px solid #0070a8;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	-moz-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	color: white;
+	background-color: #1ea1e3;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #1ea1e3), color-stop(100%, #008fd5));
+	background-image: -webkit-linear-gradient(#1ea1e3 60%, #008fd5 100%);
+	background-image: -moz-linear-gradient(center top, #1ea1e3 60%, #008fd5 100%);
+	background-image: -moz-gradient(center top, #1ea1e3 60%, #008fd5 100%);
+	background-color: #008fd5;
+}
+ 
+ .button.red:hover, .button.red:focus {
+	background-color: #d61515;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #d61515), color-stop(100%, #bf1313));
+	background-image: -webkit-linear-gradient(#d61515 60%, #bf1313 100%);
+	background-image: -moz-linear-gradient(center top, #d61515 60%, #bf1313 100%);
+	background-image: -moz-gradient(center top, #d61515 60%, #bf1313 100%);
+	background-color: #c53939;
+	border: 1px solid #990000;
+}
+
+.button.red {
+	border: 1px solid #990000;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	-webkit-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	-moz-box-shadow: 0px 1px 0 0px rgba(0, 0, 0, 0.14);
+	color: white;
+	background-color: #d61515;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #d61515), color-stop(100%, #cc1414));
+	background-image: -webkit-linear-gradient(#d61515 60%, #cc1414 100%);
+	background-image: -moz-linear-gradient(center top, #d61515 60%, #cc1414 100%);
+	background-image: -moz-gradient(center top, #d61515 60%, #cc1414 100%);
+}
+
+.writeReview {
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 5px;
+	right: 3px;
+}
+
+.writeReview p {
+	float: left;
+	margin: 10px 2px;
+	font-size: 14px;
+}
+
+.writeReview .button {
+	font-size: 30px;
+	padding: 2px 5px;
+	margin: 0 2px;
+}
+
+.reviewHeader{
+	overflow: auto;
+}
+
+.reviewRow {
+	clear: both;
+	margin: 10px;
+}
+
+.reviewInfo {
+	float: left;
+}
+
+.reviewTitle {
+	font-size: 13px;
+	margin: 2px;
+}
+
+.reviewAuthor {
+	opacity: .75;
+	font-size: 11px;
+	margin: 2px;
+}
+
+.rating {
+	float: right;
+}
+
+.rating p {
+	margin: 0;
+	float: right;
+}
+
+.reviewBody {
+	clear: both;
+	margin-top: 6px;
+	overflow: auto;
+}
+
+.reviewText {
+	font-size: 11px;
+	margin: 5px;
+}
+
+.reviewDate {
+	font-size: 10px;
+	opacity: .75;
+	float: right;
+	margin: 3px;
+}
+
+.playlists {
+	list-style: none;
+	overflow: auto;
+}
+
+.playlists li {
+	clear: both;
+	margin: 10px 5px;
+	overflow: auto;
+}
+
+.addToPlaylist {
+	float: left;
+	margin: 0;
+}
+
+.playlistName {
+	float: left;
+	margin: 5px 40px;
+}
+
+.message {
+	text-align: center;
+}
+
+.success {
+	font-size: 60px;
+	color: green;
+	margin: 5px;
+}
+
+.songName {
+	margin: 0 11px; 
+	font-size: 15px;
+	opacity: .8;
+}
+
+textarea {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	border: 1px solid #b8c3c9;
+	padding: 6px 8px;
+	resize: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0px;
+	width: 100%;
+	font-size: 14px;
+	font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+
+.content {
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

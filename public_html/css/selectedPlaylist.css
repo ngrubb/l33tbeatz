@@ -1,0 +1,112 @@
+#selectedHeader {
+    margin: 15px;
+    border-bottom: 2px solid #FFF;
+    overflow: auto;
+    color: white;
+
+}
+
+#playlistInfo {
+    float: left;
+    margin: 20px;
+    padding: 0;
+}
+
+.headerIcon img{
+    -webkit-box-shadow: 5px 5px 10px #222;
+    box-shadow:         5px 5px 10px #222;
+}
+
+.headerIcon {
+    float: left;
+    margin: 15px;
+    width: 215px;
+}
+
+.playlistTitle h4{
+    margin: 2px;
+    font-size: 2.5em;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.songCount h6{
+    margin: 5px;
+    font-size: 1.2em;
+    opacity: .7;
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+}
+
+#playlistTracks {
+    margin: 15px;
+    color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#playlistTracks {
+    list-style: none;
+}
+
+.track {
+    height: 60px;
+    color: white;
+}
+
+.track:hover {
+    color: #00A3EE;
+}
+
+.playMedia {
+    color: white
+    font-size: 1.5em;
+    float: left;
+    opacity: .7;
+}
+
+.playHidden {
+    font-size: 1.5em;
+    float: left;
+    visibility: hidden;
+}
+
+.track button {
+    color: white;
+    padding: 1px;
+    width: 40px;
+}
+
+.playMedia:hover {
+    opacity: 1;
+}
+
+.trackNumber {
+    float: left;
+    margin: 0 10px;
+    font-size: 2em;
+}
+
+
+.trackInfo {
+    float: left;
+    margin: 0 10px;
+
+}
+
+.trackInfo p{
+    margin: 3px;
+}
+
+.trackTitle {
+    font-size: 1em;
+}
+
+.trackArtist {
+    font-size: .8em;
+}
+
+.trackTime {
+    float: right;
+    margin: 0 10px;
+    opacity: .7;
+
+}
